@@ -14,7 +14,12 @@ body{
     color: black;
     text-align: center;
 }
-nav{
+    .cabeza ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+.descripcion{
     background-color: #f55b47a1;
     text-align: center;
 }
