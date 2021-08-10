@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/inflacion.css">
+        <title>Inflación</title>
+    </head>
+    <body>
+        <header class="cabeza">
+            <h1>Calculadora del poder de compra en tu país</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tienda.html">Ir a la tienda</a></li>
+                    <li><a href="media.html">Promedios</a></li>
+                    <li><a href="salarios.html">Salarios</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article class="descripcion">
+            <h2>Inflación</h2>
+            <p>
+                La inflación es un fenómeno que describe el aumento del nivel general de precios.
+                Hace que tu poder de compra disminuya (o aumente en raras ocaciones), a medida que pasa el tiempo.
+                Si la inflación es muy alta, los productos del mercado subirán y tu poder adquisitivo disminuye.<br />
+                A continuación verás una calculadora de tu poder de compra a través del tiempo (en años) dependiendo de la inflación.
+            </p>
+            <div class="seccion">
+                <form action="" class="formato">
+                    <input type="number" id="dineroInicial" placeholder="Cuánto dinero inicial tienes?" required />
+                    <input type="number" id="porciento" placeholder="Cuál es el porcentaje de inflación?" required />
+                    <input type="number" id="tiempo" placeholder="Cuánto tiempo transcurre? (en años)" >
+                    <button type="button" onclick="calcularTotal()">Calcular</button>
+                </form>
+            </div>
+            <p id="jstexto"></p>
+        </article>
+        <footer class="pie"><p>Hecho por &copy;Richie el 9 de Agosto de 2021</p></footer>
+        <script src="inflacion.js"></script>
+    </body>
+</html>

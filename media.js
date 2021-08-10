@@ -31,5 +31,27 @@ function calcularMediana(lista){
     return mediana;
 }
 
-lista = [80, 50, 5000, 400000000, 8, 12];
+function calcularModa(lista){
+    const listaCount = {};
 
+    lista.map(
+        function(elemento){
+            if(listaCount[elemento]){
+                listaCount[elemento] += 1;
+            }else{
+                listaCount[elemento] = 1;
+            }
+        }
+    );
+
+    const listaArray = Object.entries(listaCount).sort(
+        function(valorAcumulado, nuevoValor){
+            return valorAcumulado[1] - nuevoValor[1];
+        }
+    );
+
+    const moda = listaArray[listaArray.length - 1];
+    return moda;
+}
+
+lista = [1, 2, 3, 3, 4, 6, 2, 1, 1, 2, 2, 5];

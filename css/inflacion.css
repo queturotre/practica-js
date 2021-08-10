@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.8rem;
+}
+    .cabeza{
+        background-color: #00DBDE;
+        background-image: linear-gradient(90deg, #FC00FF 0%, #00dade63 100%);
+        color: black;
+        text-align: center;
+    }
+        .cabeza ul{
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+        }
+    .descripcion{
+        background-color: #5089C6;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+    .seccion{
+        background: #28FFBF;
+        border-radius: 1rem;
+        height: 9rem;
+        margin:auto;
+        margin-top: 2rem;
+        width: 70%;
+    }
+        .formato{
+            display: flex;
+            flex-direction: column;
+            height: 8rem;
+        }
+            .formato input{
+                background: hsl(135, 60%, 88%);
+                border-bottom: 1px black solid;
+                border-left: 0;
+                border-radius: 0.4rem;
+                border-right: 0;
+                border-top: 0;
+                left: 50%; 
+                margin-bottom: 0.6rem;
+                position: relative; 
+                transform: translateX(-50%);
+                width: 80%;
+            }
+            ::placeholder{
+                text-align: center;
+            }
+            .formato button{
+                background: #9FE6A0;
+                border: 0;
+                border-bottom: 1px black solid;
+                border-radius: 0.8rem; 
+                left: 50%;
+                margin-bottom: 0.6rem;
+                position: relative;
+                transform: translateX(-50%);
+                width: 80%;
+            }
+    .pie{
+        background-color: black;
+        color: blanchedalmond;
+        text-align: center;
+    }
